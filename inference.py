@@ -120,7 +120,7 @@ for case_id in val_id:
             mask_final = patch.copy()
             ori_img = patch.copy()
             patch = cv2.cvtColor(patch, cv2.COLOR_BGR2RGB)
-            save_path = "/fileser/yeqy/code/PDL1/result_ori/{}/IMAGE_{}_{}.jpg".format(case_id, j, i)
+            save_path = "YOUR_SAVE_PATH"
             if not os.path.exists(os.path.dirname(save_path)):
                 os.makedirs(os.path.dirname(save_path))
             cv2.imwrite(save_path, patch)
@@ -163,7 +163,7 @@ for case_id in val_id:
             plt.subplots_adjust(top=1,bottom=0,left=0,right=1,hspace=0,wspace=0) 
             plt.margins(0, 0)
 
-            save_path = "/fileser/yeqy/code/PDL1/result_0428/{}/IMAGE_{}_{}.jpg".format(case_id, j, i)
+            save_path = "YOUR_SAVE_PATH"
             if not os.path.exists(os.path.dirname(save_path)):
                 os.makedirs(os.path.dirname(save_path))
             plt.savefig(save_path,bbox_inches="tight", pad_inches=0.0)
